@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_alpha_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_movie_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_size_medium"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_thumbnail"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:background="@android:color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        tools:text="Batman Begins" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_year_runtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:textColor="#E6EE9C"
+                        android:textSize="@dimen/text_size_micro"
+                        tools:text="2005, 140 mins" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:textColor="#4CAF50"
+                        android:textSize="48sp"
+                        tools:text="8.3 &#9733;" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_plot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="18sp"
+                android:textColor="#E6EE9C"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_directors_label"
+                style="@style/Label"
+                android:text="Directors" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_director"
+                style="@style/Content"
+                android:textColor="#E6EE9C"
+                tools:text="Ivam Magalhaes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_actors_label"
+                style="@style/Label"
+                android:text="Actors" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_actors"
+                style="@style/Content"
+                android:textColor="#E6EE9C"
+                tools:text="Ivam Magalhaes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_writers_label"
+                style="@style/Label"
+                android:text="Writers" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_writers"
+                style="@style/Content"
+                android:textColor="#E6EE9C"
+                tools:text="Ivam Magalhaes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_production_label"
+                style="@style/Label"
+                android:text="Production" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_production"
+                style="@style/Content"
+                android:textColor="#E6EE9C"
+                tools:text="Ivam Magalhaes" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/view_loading_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cari Film</string>
+    <string name="cari_film">Cari judul film</string>
+    <string name="kosong">Judul yang kamu cari tidak terdapat di film manapun</string>
+    <string name="tahun_n_waktu_jalan">%1$s, %2$s</string>
+    <string name="error">Error server!</string>
+    <string name="hint">misalnya: Sky</string>
+    <string name="unavailable">N/A</string>
+    <string name="imdb_rating">%1$s &#9733;</string>
+    <string name="splash">splash</string>
+    <string name="tutorial">tutorial</string>
+    <string name="reload">Tampilkan film terbaru</string>
+</resources>

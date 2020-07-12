@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical">
+
+    <!-- Sab 29-12-18 221812: before is horizontal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp">
+
+        <!-- Sab 29-12-18 221928: dari activity_search.xml to here because can use double View view in init in CustomSearch -->
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_input"
+            android:background="@drawable/elevation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <!-- Sab 29-12-18 173845: linear layout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- Sab 29-12-18 173224: switch -->
+        <androidx.appcompat.widget.SwitchCompat
+            app:showText="true"
+            app:thumbTextPadding="10dp"
+            app:thumbTint="#84FFFF"
+            app:trackTint="#B03961"
+            android:id="@+id/switch_compat"
+            android:checked="false"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_margin="4dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/reload"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

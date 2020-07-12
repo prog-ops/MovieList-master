@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
+
+    <!--<RelativeLayout-->
+    <!--app:layout_constraintTop_toTopOf="@+id/cons"-->
+    <!--android:id="@+id/relativeLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/gradient"
+        android:gravity="center"
+        android:text="@string/cari_film"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!--<com.example.omdb.feature.common.components.CustomSearch-->
+    <com.movielist.movielist.feature.common.components.CustomSearch
+        android:id="@+id/cs_search"
+        android:layout_alignBottom="@+id/rv_card_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center" />
+
+    <!--<com.example.omdb.core.base.BaseRecyclerView-->
+    <com.movielist.movielist.core.base.BaseRecyclerView
+        android:id="@+id/rv_card_movies"
+        android:layout_alignTop="@+id/cs_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/cs_search" />-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />-->
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/view_loading_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <!--app:layout_constraintTop_toBottomOf="@+id/cs_search" />-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>
